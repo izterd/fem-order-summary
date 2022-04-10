@@ -42,11 +42,13 @@ body {
 	overflow: hidden;
 }
 .card-image {
-	width: 100%;
+
 }
 .card-image img {
-  
+
+  width: 100%;
 }
+
 .card-detail {
 	margin: 1.25rem;
 	display: flex;
@@ -129,6 +131,11 @@ body {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
