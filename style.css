@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+	--color-pale-blue: hsl(225, 100%, 94%);
+	--color-bright-blue: rgb(56, 41, 224);
+	--color-very-pale-blue: hsl(225, 100%, 98%);
+	--color-desaturated-blue: hsl(224, 23%, 55%);
+	--color-dark-blue: hsl(223, 47%, 23%);
+	--color-white: white;
+	--font-size-paragraph: 1rem; /* ! 1rem = 16px*/
+	--main-font-family: 'Red Hat Display', sans-serif;
+	--button-box-shadow: 0 0.1rem 0.71rem rgba(56, 41, 224, 0.8);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background-color: var(--color-pale-blue);
+	font-family: var(--main-font-family);
+}
+
+.card {
+	/* width: 25%; 
+  width: max-content;*/
+	width: 21rem;
+	background-color: var(--color-white);
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.card-image {
+	width: 100%;
+}
+.card-image img {
+  
+}
+.card-detail {
+	margin: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.card-text {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-title {
+	color: var(--color-dark-blue);
+	margin-bottom: 1rem;
+	font-weight: 900;
+}
+.main-paragraph {
+	color: var(--color-desaturated-blue);
+	width: 90%;
+	font-weight: 500;
+	font-size: 1rem;
+}
+.plan-box {
+	background-color: var(--color-very-pale-blue);
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	border-radius: 1rem;
+}
+.music-icon {
+	margin-right: 1rem;
+}
+
+.plan-name {
+	font-weight: 900;
+	color: var(--color-dark-blue);
+}
+
+.plan-detail {
+	line-height: 1.6;
+	color: var(--color-desaturated-blue);
+}
+
+.change-link {
+	color: var(--color-bright-blue);
+}
+
+.button {
+	display: block;
+	padding: 0.75rem;
+	background: none;
+	border: none;
+	text-align: center;
+	margin: 10px auto;
+	padding: 0.75rem 5rem;
+}
+
+.button.payment {
+	background-color: var(--color-bright-blue);
+	color: white;
+	border-radius: 10px;
+	font-family: var(--main-font-family);
+	font-weight: 900;
+	box-shadow: var(--button-box-shadow);
+}
+
+.button.cancel {
+	font-size: 0.8rem;
+	font-family: var(--main-font-family);
+	color: var(--color-desaturated-blue);
+	font-weight: 900;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
